@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Formula1-Bold';
+    src: url(fonts/Formula1-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url(fonts/Formula1-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #14141e;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Formula1-Bold', sans-serif;
+    color: white;
+}
+
+p {
+    font-family: 'Formula1-Regular', sans-serif;
+    color: white;
+}
+
+a {
+    font-family: 'Formula1-Bold', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------------------------ HEADER ------------------------------------ */
+
+.above-header {
+    width: 100vw;
+    height: 50px;
+    background-color: #14141e;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.sponsors > img{
+    width: 800px;
+}
+
+.log-in {
+    position: absolute;
+    right: 100px;
+}
+
+.log-in > a {
+    margin-right: 20px;
+}
+
+.header {
+    width: 100vw;
+    height: 100px;
+    background-color: #14141e;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav > a > img {
+    height: 100px;
+    width: auto;
+}
+
+.nav > div a {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 1.4rem;
+    padding-bottom: 36px;
+}
+
+.nav > div > a:hover {
+    border-bottom: 1px solid red;
+}
+
+/* ------------------------------------ HEADER ------------------------------------ */
+
+/* ------------------------------------ MAIN ------------------------------------ */
+
+/* .hammy {
+    margin-top: -123px;
+}  */
+
+
+
+/* ------------------------------------ MAIN ------------------------------------ */
+
+.main {
+    width: 100vw;
+    min-height: 610px;
+}
+
+
+
+.intro {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+}
+
+label{
+    color: white;
+}
+
+.table {
+    position: relative;
+    left: 40%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .table thead tr {
+    background-color: #ff0000;
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px 15px;
+  }
+  
+  .table tbody tr {
+    border-bottom: 1px solid #000000;
+  }
+  
+  .table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .table tbody tr:last-of-type {
+    border-bottom: 1px solid #000000;
+  }
+
+  #myInput {
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 20%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+  
+
+/* ------------------------------------ FOOTER ------------------------------------ */
+
+.footer {
+    width: 100vw;
+    height: 100px;
+    background-color: #14141e;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.d1b {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 150px;
+}
+
+.powerd {
+    color: white;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 150px;
+}
+
+/* ------------------------------------ FOOTER ------------------------------------ */
