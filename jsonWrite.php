@@ -10,7 +10,7 @@ $db = new SQLite3("film.db");
 $db->busyTimeout(5000);
  
 // Maak de query om de nieuwe student weg te schrijven naar de database
-$query = "INSERT INTO film (filmNaam, beoordeling) VALUES ('$data->filmNaam', '$data->beoordeling')";
+$query = "INSERT INTO film (filmNaam, beoordeling, beschrijving) VALUES ('$data->filmNaam', '$data->beoordeling', '$data->beschrijving')";
 
 // Voer de query uit tegen de Database
 $db->exec($query);
