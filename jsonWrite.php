@@ -6,11 +6,11 @@ $json = file_get_contents('php://input');
 $data = json_decode($json);
 
 // Maak verbinding met de database
-$db = new SQLite3("student.db");
+$db = new SQLite3("film.db");
 $db->busyTimeout(5000);
  
 // Maak de query om de nieuwe student weg te schrijven naar de database
-$query = "INSERT INTO student (studentNaam, studentNummer) VALUES ('$data->studentNaam', '$data->studentNummer')";
+$query = "INSERT INTO film (filmNaam, beoordeling) VALUES ('$data->filmNaam', '$data->beoordeling')";
 
 // Voer de query uit tegen de Database
 $db->exec($query);

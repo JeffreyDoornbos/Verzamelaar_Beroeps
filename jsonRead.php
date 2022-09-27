@@ -3,12 +3,12 @@
 header('Content-Type: application/json');
 
 // Maak verbinding met de database
-$db = new SQLite3("student.db");
+$db = new SQLite3("film.db");
 $db->busyTimeout(5000);
  
 // Selecter maximaal 10 studenten uit de student tabel
 // gesorteerd op studentNaam aflopend.
-$query = "SELECT * FROM student ORDER BY rowid DESC LIMIT 25";
+$query = "SELECT * FROM film ORDER BY rowid DESC LIMIT 25";
 $result=$db->query($query);
 
 // Doorloop de resultaten en plaats deze in een Array
