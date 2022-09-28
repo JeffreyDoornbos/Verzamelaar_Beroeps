@@ -39,6 +39,7 @@ getStudent();
 
 
 
+
 nieuweStudent.addEventListener("submit",function(event){
 
     console.log ("FORMULIER");
