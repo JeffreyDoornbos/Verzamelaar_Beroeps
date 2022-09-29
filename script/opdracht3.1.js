@@ -12,11 +12,11 @@ function success() {
         let row         = table.insertRow(i+1);
         let studentnummer       = row.insertCell(0);
         let studentnaam       = row.insertCell(1);
-        let beschrijving    = row.insertCell(2);
+        let beschrijving1   = row.insertCell(2);
    
         studentnummer.innerHTML =  film[i].filmNaam;
         studentnaam.innerHTML =  film[i].beoordeling;
-        beschrijving = film[i].beschrijving
+        beschrijving1 = film[i].beschrijving
 
     }
 
