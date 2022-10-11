@@ -1,5 +1,6 @@
 let output = document.getElementById("output");
 let table = document.getElementById("myTable");
+let nieuweStudent = document.getElementById("nieuweStudent");
 
 function success() {
     let film = JSON.parse(this.responseText);
