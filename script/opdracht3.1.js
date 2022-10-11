@@ -44,7 +44,7 @@ nieuweStudent.addEventListener("submit",function(event){
     console.log ("FORMULIER");
     let naaminvoer = document.getElementById("filmNaam").value;
     let leerlingnummer = document.getElementById("beoordeling").value;
-    let beschrijvinginv = document.getElementById("beschrijving").value;
+    let beschrijvinginv = document.getElementById("beschrijving1").value;
 
     let student = {filmNaam: naaminvoer, beoordeling: leerlingnummer, beschrijving: beschrijvinginv};
     let jsonleerling = JSON.stringify(student);
