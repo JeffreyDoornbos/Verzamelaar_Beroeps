@@ -16,7 +16,7 @@ function success() {
    
         studentnummer.innerHTML =  film[i].filmNaam;
         studentnaam.innerHTML =  film[i].beoordeling;
-        beschrijving1 = film[i].beschrijving
+        beschrijving1 = film[i].beschrijving;
 
     }
 
