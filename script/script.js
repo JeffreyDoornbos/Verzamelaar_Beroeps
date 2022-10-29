@@ -3,8 +3,6 @@ let table = document.getElementById("myTable");
 
 function success() {
     let film = JSON.parse(this.responseText);
-    console.log(film);
-
     let aantal = film.length;
 
     for (let i = 0; i < aantal; i++)
@@ -19,8 +17,6 @@ function success() {
         beschrijving = film[i].beschrijving
 
     }
-
-
 }
 function error(err) {
     console.error('Error Occurred :', err);
@@ -33,12 +29,8 @@ function getStudent(){
     xhr.open('GET', 'jsonRead.php', true);
     xhr.send();
 }
-
 // Haal initieel al de film op die in de database staan
 getStudent();
-
-
-
 
 nieuweStudent.addEventListener("submit",function(event){
 
