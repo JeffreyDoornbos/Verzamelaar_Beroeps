@@ -1,5 +1,6 @@
 let output = document.getElementById("output");
 let table = document.getElementById("myTable");
+let nieuweStudent = document.getElementById("nieuweStudent");
 
 function success() {
     let film = JSON.parse(this.responseText);
@@ -10,11 +11,11 @@ function success() {
         let row         = table.insertRow(i+1);
         let studentnummer       = row.insertCell(0);
         let studentnaam       = row.insertCell(1);
-        let beschrijving    = row.insertCell(2);
+        let beschrijving1   = row.insertCell(2);
    
         studentnummer.innerHTML =  film[i].filmNaam;
         studentnaam.innerHTML =  film[i].beoordeling;
-        beschrijving = film[i].beschrijving
+        beschrijving1 = film[i].beschrijving;
 
     }
 }
@@ -37,7 +38,7 @@ nieuweStudent.addEventListener("submit",function(event){
     console.log ("FORMULIER");
     let naaminvoer = document.getElementById("filmNaam").value;
     let leerlingnummer = document.getElementById("beoordeling").value;
-    let beschrijvinginv = document.getElementById("beschrijving").value;
+    let beschrijvinginv = document.getElementById("beschrijving1").value;
 
     let student = {filmNaam: naaminvoer, beoordeling: leerlingnummer, beschrijving: beschrijvinginv};
     let jsonleerling = JSON.stringify(student);
