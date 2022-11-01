@@ -64,12 +64,12 @@ if (mysqli_num_rows($result) > 0)
     while ($item = mysqli_fetch_assoc($result))
     {
         ?>
-        
-        <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
-        <h2><?php echo $item['filmNaam'] ?></h2>
-        <h2>Beoordeling: <?php echo $item['beoordeling'] ?></h2>
-        <h3>Beschrijving <br> <?php echo $item['beschrijving'] ?></h3>
-        
+        <div class="flex-in-flex-box">
+            <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
+            <h2><?php echo $item['filmNaam'] ?></h2>
+            <h2>Beoordeling: <?php echo $item['beoordeling'] ?></h2>
+            <h3>Beschrijving <br> <?php echo $item['beschrijving'] ?></h3>
+        </div>
 
         <?php
     }
