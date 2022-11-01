@@ -36,7 +36,9 @@ $stmt->close();
 		<nav class="navtop">
 			<div>
 				<h1>Movie Database</h1>
-                <a href="home.php"><i class="fas fa-user-circle"></i>Home</a>
+				<a href="home.php"><i class="fas fa-user-circle"></i>Home</a>
+				<a href="toevoegen.php"><i class="fas fa-user-circle"></i>Toevoegen</a>
+				<a href="overzicht.php"><i class="fas fa-user-circle"></i>Overzicht</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>

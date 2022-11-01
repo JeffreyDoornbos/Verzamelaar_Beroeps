@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
 		</nav>
 		<div class="content">
 			<h2>Home Page</h2>
-			<p>Welkomm terug, <?=$_SESSION['name']?>!</p> 
+			<p>Welkom terug, <?=$_SESSION['name']?>!</p> 
 			<p>Dit is je beheerder pagina. <br>
 			   Je kan hier je film collectie uitbereiden </p>
 		</div>
