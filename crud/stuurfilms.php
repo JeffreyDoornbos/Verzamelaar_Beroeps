@@ -54,10 +54,11 @@ if (isset($_POST['verzend'])) {
     }
     //terug naar het overzicht
     echo "<a href='toonfilms.php'>OVERZICHT</a>";
+    
 
     //Test: toon de query op het scherm
     echo $query . "</br>";
-
+    header('Location: toevoegen.php');
 } else {
     echo "het formulier is niet (goed) verstuurd</br>";
 }
