@@ -228,9 +228,11 @@ label{
     margin: 25px;
     border: 1px solid white;
     border-radius: 10px;
+    width: 400px;
+    height: 500px; 
 }
 
 .h3-box {
-    width: 400px;
-    height: 500px; 
+    width: 390px;
+    height: 390px; 
 }
