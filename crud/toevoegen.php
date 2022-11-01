@@ -60,7 +60,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <td><input type="text" name="beschrijving" id="beschrijving" maxlength="250" required></td>
             </tr>
             <tr>
-                <td><input type="file" name="image[]" /></td>
+                <td><input type="file" name="image[]" required/></td>
             </tr>
             <tr>
                 <td> </td>
