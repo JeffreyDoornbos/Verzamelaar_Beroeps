@@ -23,6 +23,11 @@ if (!isset($_SESSION['loggedin'])) {
 
     <!-- JS LINKS -->
     <script src="scripts/countdown.js" defer></script>
+    <style>
+        td{
+            color:white;
+        }
+    </style>
 </head>
 <body>
 
