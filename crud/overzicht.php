@@ -66,7 +66,7 @@ if (mysqli_num_rows($result) > 0)
         echo $item['beoordeling'] . " <br/> ";
         echo $item['beschrijving'] . " <br/> ";
         ?>
-            <img style="width:200px ;" src="upload/<?php echo $item['image']. "<br/>" ?>" alt="png/jpg">
+            <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
        <?php
     }
 }
