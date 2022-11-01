@@ -39,26 +39,31 @@ if (!isset($_SESSION['loggedin'])) {
 
 
     <div class="intro">
-    <form id="nieuweStudent">
-     
-          <h2>Film toevoegen</h2>  <br>
-            <label for="studentNaam">Naam film:</label>
-            <input type="text" name="studentNaam" id="filmNaam" required >
-            <br>
-
-            <label for="studentNummer">Beoordeling:</label>
-            <input type="number" name="studentNummer" id="beoordeling" required >
-            <br>
-
-            <label for="beschrijving">Beschrijving:</label>
-            <input type="text" name="beschrijving" id="beschrijving" required >
-            <br>
-
-            <input type="submit" value="Opslaan"><br>
-     
+    <form name="filmForm" method="post" action="stuurfilms.php" enctype="multipart/form-data">
+        <table>
+            <th><h2>Voeg een film toe</h2></th>
+            <tr>
+                <td>Film naam: </td>
+                <td><input type="text" name="filmNaam" id="beschrijving" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td>Beoordeling: </td>
+                <td><input type="number" name="beoordeling" id="bescrijving" value="0" max="10" required></td>
+            </tr>
+            <tr>
+                <td>Beschrijving: </td>
+                <td><input type="text" name="beschrijving" id="beschrijving" maxlength="250" required></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="image[]" /></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="submit" name="verzend" value="Voeg toe aan je collectie"></td>
+            </tr>
+        </table>
     </form>
-
-</div>
+    </div>
 
     <script src="../script/script.js"></script>
   
