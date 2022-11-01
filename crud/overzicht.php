@@ -36,32 +36,51 @@ if (!isset($_SESSION['loggedin'])) {
     </div>
 
 
+
+    <?php
+// voeg database verbinding toe
+require 'config.php';
+
+// maak query
+$query = "SELECT * FROM films";
+// voer de query uit en vang he resultaat op
+$result = mysqli_query($mysqli, $query);
+// als er geen resultaat is dan is er iets fout gegaan
+if (!$result)
+{
+    echo "<p>FOUT!</p>";
+    echo "<p>" . $query . "</p>";
+    echo "<p>" . mysqli_error($mysqli) . "</p>";
+    exit;
+}
+// als er records zijn
+if (mysqli_num_rows($result) > 0)
+{
+    // zolang er items uit te lezen zijn...
+    while ($item = mysqli_fetch_assoc($result))
+    {
     
-</div>
-    <br>
-    <div id="output">
-        <table class="table" id="myTable">
-            <thead>
-                <tr>
-                    <th>Film: </th>
-                    
-                    <th>Beoordeling:</th>
+        // toon de gegevens van het item
+        echo "<br/>";
+        echo $item['filmNaam'] . " <br/> ";
+        echo $item['beoordeling'] . " <br/> ";
+        echo $item['beschrijving'] . " <br/> ";
+        ?>
+            <img style="width:200px ;" src="upload/<?php echo $item['image']. "<br/>" ?>" alt="png/jpg">
+       <?php
+    }
+}
 
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-    </div>
-
-
+//als er geen records zijn...
+else
+{
+    echo "<p>Geen items gevonden!</p>";
+}
+?>
     
 
 
 
-
-    <script src="script/script.js"></script>
 
   
     <div class="footer">
