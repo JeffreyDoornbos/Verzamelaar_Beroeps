@@ -59,15 +59,15 @@ if (mysqli_num_rows($result) > 0)
     // zolang er items uit te lezen zijn...
     while ($item = mysqli_fetch_assoc($result))
     {
-    
-        // toon de gegevens van het item
-        echo "<br/>";
-        echo $item['filmNaam'] . " <br/> ";
-        echo $item['beoordeling'] . " <br/> ";
-        echo $item['beschrijving'] . " <br/> ";
         ?>
-            <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
-       <?php
+
+        <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
+        <h2><?php echo $item['filmNaam'] ?></h2>
+        <h2>Beoordeling: <?php echo $item['beoordeling'] ?></h2>
+        <h3>Beschrijving <br> <?php echo $item['beschrijving'] ?></h3>
+
+
+        <?php
     }
 }
 
