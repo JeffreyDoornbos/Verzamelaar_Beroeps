@@ -222,4 +222,8 @@ label{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
 }
