@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
+				<h1>Movie Database</h1>
                 <a href="home.php"><i class="fas fa-user-circle"></i>Home</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
@@ -28,7 +28,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<div class="content">
 			<h2>Home Page</h2>
 			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-            <a href="edit.php">edit je shit man</a>
+            <a href="toevoegen.php">edit je shit man</a>
 		</div>
 	</body>
 </html>
