@@ -222,8 +222,12 @@ label{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 25px;
     border: 1px solid white;
     border-radius: 10px;
+}
+
+.h3-box {
+    width: 400px;
+    height: 500px; 
 }
