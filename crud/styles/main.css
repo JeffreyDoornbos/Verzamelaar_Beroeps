@@ -213,8 +213,11 @@ label{
 
 .flex-box {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow: scroll;  
     justify-content: center;
+    /* flex-direction: row; */
 }
 
 .flex-in-flex-box {
