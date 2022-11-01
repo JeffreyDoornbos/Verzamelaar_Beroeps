@@ -219,6 +219,8 @@ label{
     overflow: scroll;  
     justify-content: center;
     width: 175px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     /* flex-direction: row; */
 }
 
