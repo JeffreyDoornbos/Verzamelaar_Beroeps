@@ -56,19 +56,26 @@ if (!$result)
 // als er records zijn
 if (mysqli_num_rows($result) > 0)
 {
+
+    ?>
+    <div class="flex-box">
+    <?php
     // zolang er items uit te lezen zijn...
     while ($item = mysqli_fetch_assoc($result))
     {
         ?>
-
+        
         <img style="width:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
         <h2><?php echo $item['filmNaam'] ?></h2>
         <h2>Beoordeling: <?php echo $item['beoordeling'] ?></h2>
         <h3>Beschrijving <br> <?php echo $item['beschrijving'] ?></h3>
-
+        
 
         <?php
     }
+    ?>
+    </div>
+    <?php
 }
 
 //als er geen records zijn...
