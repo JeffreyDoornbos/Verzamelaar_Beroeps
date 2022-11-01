@@ -57,7 +57,7 @@ if (!isset($_SESSION['loggedin'])) {
             </tr>
             <tr>
                 <td>Beschrijving: </td>
-                <td><input type="text" name="beschrijving" id="beschrijving" maxlength="250" required></td>
+                <td><textarea type="text" name="beschrijving" id="beschrijving" maxlength="250" required cols="16.5" rows="5"></textarea></td>
             </tr>
             <tr>
                 <td><input type="file" name="image[]" required/></td>

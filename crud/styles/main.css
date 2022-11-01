@@ -213,9 +213,11 @@ label{
 
 .flex-box {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow: scroll;  
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 
 .flex-in-flex-box {
@@ -229,8 +231,8 @@ label{
     border-radius: 10px;
 }
 
-@media (max-width: 1000px) {
+/* @media (min-width: 1000px) {
     .flex-box {
       flex-direction: column;
     }
-  }
+  } */

@@ -21,14 +21,17 @@ if (!isset($_SESSION['loggedin'])) {
 			<div>
 				<h1>Movie Database</h1>
                 <a href="home.php"><i class="fas fa-user-circle"></i>Home</a>
+				<a href="toevoegen.php"><i class="fas fa-user-circle"></i>Toevoegen</a>
+				<a href="overzicht.php"><i class="fas fa-user-circle"></i>Overzicht</a>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
 		</nav>
 		<div class="content">
 			<h2>Home Page</h2>
-			<p>Welcome back, <?=$_SESSION['name']?>!</p>
-            <a href="toevoegen.php">edit je shit man</a>
+			<p>Welkomm terug, <?=$_SESSION['name']?>!</p> 
+			<p>Dit is je beheerder pagina. <br>
+			   Je kan hier je film collectie uitbereiden </p>
 		</div>
 	</body>
 </html>
