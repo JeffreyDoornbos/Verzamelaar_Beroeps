@@ -33,7 +33,7 @@ if (mysqli_num_rows($result) > 0)
         echo $item['beoordeling'] . " - ";
         echo $item['beschrijving'] . " - ";
         ?>
-            <img src="upload/<?php echo $item['image']."<br/>" ?> >
+            <img src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
        <?php
     }
 }
