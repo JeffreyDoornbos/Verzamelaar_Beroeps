@@ -29,7 +29,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="header" style="z-index: 2;">
         <div class="nav">
             <a href="home.php"><img src="media/logomovie.PNG" alt="png"></a>
-            <div class="tickets-"><a href="overzicht.php">Overzicht</a></div>
+            <div class="tickets-"><a href="toonfilms.php">Overzicht</a></div>
             <div class="contact"><a href="toevoegen.php">Toevoegen</a></div>
         </div>
     </div>
