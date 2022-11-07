@@ -14,6 +14,6 @@
     }
 
     // Terug naar het overzicht
-    echo "<a href='toonagenda.php'>Terug</a>";
+    echo "<a href='verwijderfilm.php'>Terug</a>";
 
 ?>

@@ -36,7 +36,7 @@ if (!isset($_SESSION['loggedin'])) {
             <a href="home.php"><img src="media/logomovie.PNG" alt="png"></a>
             <div class="tickets-"><a href="overzicht.php.php">Overzicht</a></div>
             <div class="contact"><a href="toevoegen.php">Toevoegen</a></div>
-            <div class="contact"><a href="verwijderfilm.php">Verwijder</a></div>
+            <div class="contact"><a href="update.php">Updaten</a></div>
         </div>
     </div>
 
@@ -47,7 +47,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="intro">
     <form name="filmForm" method="post" action="stuurfilms.php" enctype="multipart/form-data">
         <table>
-            <th><h2>Voeg een film toe</h2></th>
+            <th><h2>update je film</h2></th>
             <tr>
                 <td>Film naam: </td>
                 <td><input type="text" name="filmNaam" id="beschrijving" maxlength="10" required></td>

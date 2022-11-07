@@ -6,7 +6,7 @@
 
     echo "Item met ID " . $id . " wordt verwijderd....<br>";
 
-    $query = "DELETE FROM verprog1_agenda WHERE ID = " . $id;
+    $query = "DELETE FROM `films` WHERE id = " . $id;
 
     $result = mysqli_query($mysqli, $query);
 
@@ -20,7 +20,7 @@
     }
 
     // Terug naar het overzicht
-    echo "<a href='toonagenda.php'>Terug</a>";
+    echo "<a href='verwijderfilm.php'>Terug</a>";
 
 
 ?>

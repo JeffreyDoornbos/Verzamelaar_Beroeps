@@ -31,6 +31,7 @@ if (!isset($_SESSION['loggedin'])) {
             <a href="home.php"><img src="media/logomovie.PNG" alt="png"></a>
             <div class="tickets-"><a href="overzicht.php">Overzicht</a></div>
             <div class="contact"><a href="toevoegen.php">Toevoegen</a></div>
+            <div class="contact"><a href="verwijderfilm.php">Verwijder</a></div>
 
         </div>
     </div>
