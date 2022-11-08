@@ -50,7 +50,7 @@ if (!isset($_SESSION['loggedin'])) {
             <th><h2>Voeg een film toe</h2></th>
             <tr>
                 <td>Film naam: </td>
-                <td><input type="text" name="filmNaam" id="beschrijving" maxlength="10" required></td>
+                <td><input type="text" name="filmNaam" id="beschrijving"  required></td>
             </tr>
             <tr>
                 <td>Beoordeling: </td>

@@ -21,6 +21,6 @@
 
     // Terug naar het overzicht
     echo "<a href='verwijderfilm.php'>Terug</a>";
-
+    header('Location: verwijderfilm.php');
 
 ?>

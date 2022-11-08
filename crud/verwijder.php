@@ -3,7 +3,7 @@
     $id = $_GET['id'];
     // Als er een id is...
     if ($id !="") {
-        echo "Verwijder item met ID: " . $id . "<br>";
+     
 
         echo "<p>Weet je het zeker?</php>";
 
@@ -17,3 +17,5 @@
     echo "<a href='verwijderfilm.php'>Terug</a>";
 
 ?>
+
+
