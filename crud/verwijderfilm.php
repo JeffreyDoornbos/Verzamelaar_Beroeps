@@ -43,6 +43,7 @@ if (!$result) {
             tr,th{
                 color: white;
                 border-radius: 20px;
+                text-align: center;
             }
         </style>
 	</head>

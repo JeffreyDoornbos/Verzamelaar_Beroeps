@@ -74,10 +74,6 @@ else
 ?>
     
 
-
-
-
-  
     <div class="footer">
         <div class="d1b">2022 © beste studenten van D2C</div>
         <div class="powerd">Powerd by Johan Thijen</div>
