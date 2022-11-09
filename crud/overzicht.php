@@ -89,10 +89,6 @@ else
     echo "<p>Geen items gevonden!</p>";
 }
 ?>
-    
-
-
-
 
   
     <div class="footer">
