@@ -50,11 +50,11 @@ if(isset($_POST['add'])){
 	if($conn->query($insert)== TRUE){
 
 			echo "Sucessfully add data";
-			header('location:maintenance.php');
+			header('location:home.php');
 	}else{
 
 		echo "Ooppss cannot add data" . $conn->connect_error;
-		header('location:maintenance.php');
+		header('location:home.php');
 	}
 	$insert->close();
 }
