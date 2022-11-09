@@ -4,8 +4,10 @@ session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
+    
 	exit;
 }
+
 ?>
 
 
@@ -42,8 +44,10 @@ if (!isset($_SESSION['loggedin'])) {
 // voeg database verbinding toe
 require 'config.php';
 
+
+
 // maak query
-$query = "SELECT * FROM films WHERE UserID = " + $id;
+$query = "SELECT * FROM films WHERE UserID = " . $_SESSION['id'];
 // voer de query uit en vang he resultaat op
 $result = mysqli_query($mysqli, $query);
 // als er geen resultaat is dan is er iets fout gegaan

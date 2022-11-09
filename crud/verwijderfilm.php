@@ -10,7 +10,7 @@ if (!isset($_SESSION['loggedin'])) {
 // Voeg de database-verbinding toe
 require 'config.php';
 
-$query = "SELECT * FROM `films`";
+$query = "SELECT * FROM `films` WHERE UserID = " . $_SESSION['id'];
 
 $result = mysqli_query($mysqli, $query);
 

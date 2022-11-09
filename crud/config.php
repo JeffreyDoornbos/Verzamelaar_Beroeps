@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 $db_hostname = '127.0.0.1';
 $db_username = '88299';
 $db_password = 'Zoetermeer1';
-$db_database = 'DB_verzamelaar';
+$db_database = 'movie_88299';
 
 // maak de database verbinding
 $mysqli = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
