@@ -40,7 +40,7 @@ if (isset($_POST['verzend'])) {
     //maak een toevoeg-query (let op de verschillende aanhalingtekens!)
     $query  = "INSERT INTO films";
     $query .= "(id, filmNaam, beoordeling, beschrijving, image)";
-    $query .= "VALUES (NULL, '".$naa."', '".$beo."', '".$bes."', '".$NewImageName."')";
+    $query .= "VALUES (NULL, '".$naa."', '".$beo."', '".$bes."', '".$NewImageName."', '".$id."')";
 
     //voer de query uit en vang het 'resultaat' op
     $result = mysqli_query($mysqli, $query);

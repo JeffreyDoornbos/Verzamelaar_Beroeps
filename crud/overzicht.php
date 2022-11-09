@@ -43,7 +43,7 @@ if (!isset($_SESSION['loggedin'])) {
 require 'config.php';
 
 // maak query
-$query = "SELECT * FROM films";
+$query = "SELECT * FROM films WHERE UserID = " + $id;
 // voer de query uit en vang he resultaat op
 $result = mysqli_query($mysqli, $query);
 // als er geen resultaat is dan is er iets fout gegaan
