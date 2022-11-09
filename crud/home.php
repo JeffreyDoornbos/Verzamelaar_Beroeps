@@ -73,7 +73,7 @@ if(isset($_POST['add'])){
 		
 			<div id="content">
 
-				<form action="maintenance.php" method="POST">
+				<!-- <form action="maintenance.php" method="POST">
 				<table align="center">
 					<tr>
 						<td>Username <input type="text" name="fname" value="" placeholder="Type Firstname here" required></td>
@@ -86,7 +86,7 @@ if(isset($_POST['add'])){
 						</tr>
 				</table>
 			</form>
-				<br>
+				<br> -->
 				<table align="center" border="1" cellspacing="0" width="500">
 					<tr>
 					<th>username</th>
