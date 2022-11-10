@@ -73,7 +73,7 @@ if (mysqli_num_rows($result) > 0)
             <img style="height:200px ;" src="upload/<?php echo $item['image'] ?>" alt="png/jpg">
             <h2><?php echo $item['filmNaam'] ?></h2>
             <h2>Beoordeling: <?php echo $item['beoordeling'] ?></h2>
-            <h3 class="h3-box">Beschrijving <br> <?php echo $item['beschrijving'] ?></h3>
+            <h3 class="h3-box">Beschrijving: <br> <?php echo $item['beschrijving'] ?></h3>
         </div>
 
         <?php
